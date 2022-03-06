@@ -18,7 +18,7 @@ void OnDataRecv(uint8_t * mac, uint8_t *incomingData, uint8_t len) // Veri Alım
   memcpy(&haberlesmeverileri, incomingData, sizeof(haberlesmeverileri));
   Serial.print("Okunan Potansiyometre Degeri: ");
   Serial.println(haberlesmeverileri.pot);
-  Serial.print("Alınan Veri Boyutu (byte): ");
+  Serial.print("Alinan Veri Boyutu (byte): ");
   Serial.println(len);
 }
 
@@ -33,7 +33,7 @@ void setup()
 
   if (esp_now_init() != 0) // ESP-NOW Aktif
   {
-    Serial.println("Hata: ESP-NOW Başlatılırken Bir Sorun Oluştu!");
+    Serial.println("Hata: ESP-NOW Baslatilirken Bir Sorun Olustu!");
     return;
   }
 
