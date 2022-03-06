@@ -25,10 +25,10 @@ void OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) // Veri Gönderim Kontrol
   
   if (sendStatus == 0)
   {
-    Serial.println("Veri Gönderme İşlemi Başarılı");
+    Serial.println("Veri Gonderme Islemi Basarılı");
   }
   else{
-    Serial.println("Veri Gönderilemedi");
+    Serial.println("Veri Gonderilemedi");
   }
 }
 
@@ -40,7 +40,7 @@ void setup()
 
   if (esp_now_init() != 0) // ESP-NOW Aktif
   {
-    Serial.println("Hata: ESP-NOW Başlatılırken Bir Sorun Oluştu!");
+    Serial.println("Hata: ESP-NOW Baslatilirken Bir Sorun Olustu!");
     return;
   }
 
@@ -58,7 +58,7 @@ void loop()
   
   if (isnan(potpindeger)) // Potansiyometre veri kontrolü
   {
-    Serial.println("Potansiyemete degeri okunamadı!");
+    Serial.println("Potansiyemete degeri okunamadi!");
   }
   Serial.println(potpindeger); // Potansiyometreden Okunan değer ekrana bastırılır.
 
