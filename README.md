@@ -1,4 +1,4 @@
-# ESP-NOW-Communication-and-Servo-Control
+# ESP-NOW Communication and Servo Control
 ENG: Communication of 2 NodeMCU ESP8266 with each other via ESP-NOW and controlling the servo with potentiometer.
 
 TR: İki  tane NodeMCU ESP8266 'yı ESP-NOW üzerinden internetsiz bir şekilde birbiriyle haberleştirmek ve birinci geliştirme kartında potansiyometreden gelen verinin ikinci geliştirme kartına kablosuz aktarılması ve bu karta bağlı olan servo motorun kontrolünün yapılması.
